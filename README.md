@@ -1,0 +1,2 @@
+Part of my DPhil work on solar forecasting. Attempting to use some other data sources, including the Met Office's land surface observations. Source: https://registry.opendata.aws/met-office-uk-land-observations/ 
+ 
