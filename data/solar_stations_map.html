@@ -1,0 +1,2933 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1201ccb803f0a964a9ae7df91c8f722c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1201ccb803f0a964a9ae7df91c8f722c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1201ccb803f0a964a9ae7df91c8f722c = L.map(
+                "map_1201ccb803f0a964a9ae7df91c8f722c",
+                {
+                    center: [54.5, -3.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3d777c266ed6c731b9a6dbed36160abd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3d777c266ed6c731b9a6dbed36160abd.addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            var circle_marker_678299a31b616cb226e3854b876595ed = L.circleMarker(
+                [52.79, -4.74],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_678299a31b616cb226e3854b876595ed.bindTooltip(
+                `<div>
+                     Aberdaron Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e1ef3df093e65137f5c39f852bc1282e = L.circleMarker(
+                [52.79, -4.74],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_e1ef3df093e65137f5c39f852bc1282e.bindTooltip(
+                `<div>
+                     Aberdaron Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df44ed35910feefb5708eae794f93b8b = L.circleMarker(
+                [52.14, -4.57],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_df44ed35910feefb5708eae794f93b8b.bindTooltip(
+                `<div>
+                     Aberporth Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2860ba2f0de23325ede06fd64bc93fd2 = L.circleMarker(
+                [52.14, -4.57],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_2860ba2f0de23325ede06fd64bc93fd2.bindTooltip(
+                `<div>
+                     Aberporth Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e4643261ee038dd3b5a7493db4549ad = L.circleMarker(
+                [54.66, -6.23],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_7e4643261ee038dd3b5a7493db4549ad.bindTooltip(
+                `<div>
+                     Aldergrove Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4c94b52bd263592c846849a6aa158838 = L.circleMarker(
+                [54.66, -6.23],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_4c94b52bd263592c846849a6aa158838.bindTooltip(
+                `<div>
+                     Aldergrove Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d30a2126e3c9b6f7c9748854d9ba52f = L.circleMarker(
+                [51.55, -2.56],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_1d30a2126e3c9b6f7c9748854d9ba52f.bindTooltip(
+                `<div>
+                     Almondsbury Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dbdd7a404d7dec6b8f2af921964d568d = L.circleMarker(
+                [51.55, -2.56],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_dbdd7a404d7dec6b8f2af921964d568d.bindTooltip(
+                `<div>
+                     Almondsbury Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b56bfa2f1194227925e69a5ff3cbf5ff = L.circleMarker(
+                [58.29, -4.44],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_b56bfa2f1194227925e69a5ff3cbf5ff.bindTooltip(
+                `<div>
+                     Altnaharra No 2 Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eca18fb8d01345885ff7463070593d92 = L.circleMarker(
+                [58.29, -4.44],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_eca18fb8d01345885ff7463070593d92.bindTooltip(
+                `<div>
+                     Altnaharra No 2 Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8115ecda872d5dd63524ed409ae0228d = L.circleMarker(
+                [55.48, -4.57],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_8115ecda872d5dd63524ed409ae0228d.bindTooltip(
+                `<div>
+                     Auchincruive Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b4a152d1ab2b2bc44fc4dd6c4653f3ce = L.circleMarker(
+                [55.48, -4.57],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_b4a152d1ab2b2bc44fc4dd6c4653f3ce.bindTooltip(
+                `<div>
+                     Auchincruive Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bcb6e4e3c817b1d27fa5a32dfb68cbe6 = L.circleMarker(
+                [57.21, -3.83],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_bcb6e4e3c817b1d27fa5a32dfb68cbe6.bindTooltip(
+                `<div>
+                     Aviemore Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3eb74d6ec542c6f3b6ab704f08d33e69 = L.circleMarker(
+                [57.21, -3.83],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_3eb74d6ec542c6f3b6ab704f08d33e69.bindTooltip(
+                `<div>
+                     Aviemore Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6b216a58b1b2e616a38c3b4dad9a79af = L.circleMarker(
+                [52.91, -3.58],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_6b216a58b1b2e616a38c3b4dad9a79af.bindTooltip(
+                `<div>
+                     Bala Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63a230e58951183247ebbd1fc08844a6 = L.circleMarker(
+                [55.18, -6.15],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_63a230e58951183247ebbd1fc08844a6.bindTooltip(
+                `<div>
+                     Ballypatrick Forest Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3cf7aeddba428654c561660ea4e2ce51 = L.circleMarker(
+                [55.18, -6.15],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_3cf7aeddba428654c561660ea4e2ce51.bindTooltip(
+                `<div>
+                     Ballypatrick Forest Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_203d5f77700b42707eb2c355da6558a4 = L.circleMarker(
+                [52.23, -0.47],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_203d5f77700b42707eb2c355da6558a4.bindTooltip(
+                `<div>
+                     Bedford Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1b608574d8878b7b76368db96042e3d = L.circleMarker(
+                [52.23, -0.47],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_f1b608574d8878b7b76368db96042e3d.bindTooltip(
+                `<div>
+                     Bedford Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_974111a221e6407ce236e445bd5a32fb = L.circleMarker(
+                [55.42, -1.6],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_974111a221e6407ce236e445bd5a32fb.bindTooltip(
+                `<div>
+                     Boulmer Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a4fd2aaecfa51526d91d3e33b67e36d = L.circleMarker(
+                [55.42, -1.6],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_6a4fd2aaecfa51526d91d3e33b67e36d.bindTooltip(
+                `<div>
+                     Boulmer Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3630c3713e7da3cce4107d7f0a4b7e43 = L.circleMarker(
+                [57.01, -3.4],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_3630c3713e7da3cce4107d7f0a4b7e43.bindTooltip(
+                `<div>
+                     Braemar No 2 Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_05965cd7d26eb9431a33b4c8561028f7 = L.circleMarker(
+                [57.01, -3.4],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_05965cd7d26eb9431a33b4c8561028f7.bindTooltip(
+                `<div>
+                     Braemar No 2 Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cd67a9c1246c1998eb6360973c365394 = L.circleMarker(
+                [53.87, -1.32],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_cd67a9c1246c1998eb6360973c365394.bindTooltip(
+                `<div>
+                     Bramham Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fbbf1800efdd71e9e8bc3d3e8f0a0cf8 = L.circleMarker(
+                [53.87, -1.32],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_fbbf1800efdd71e9e8bc3d3e8f0a0cf8.bindTooltip(
+                `<div>
+                     Bramham Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f8853ab4fa64a4708c9b3c1f4bdd5095 = L.circleMarker(
+                [51.76, -1.58],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_f8853ab4fa64a4708c9b3c1f4bdd5095.bindTooltip(
+                `<div>
+                     Brize Norton Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_affe322da8642cf7921f94535f4e2f83 = L.circleMarker(
+                [50.83, -4.55],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_affe322da8642cf7921f94535f4e2f83.bindTooltip(
+                `<div>
+                     Bude Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_33f2c8d13427bc257cc71ea10bd38b09 = L.circleMarker(
+                [50.22, -5.33],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_33f2c8d13427bc257cc71ea10bd38b09.bindTooltip(
+                `<div>
+                     Camborne Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_398604c6b27b0f6b541991a66cc628c5 = L.circleMarker(
+                [50.22, -5.33],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_398604c6b27b0f6b541991a66cc628c5.bindTooltip(
+                `<div>
+                     Camborne Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_475165f50563c97837b41ac8b2ab43ab = L.circleMarker(
+                [50.5, -4.67],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_475165f50563c97837b41ac8b2ab43ab.bindTooltip(
+                `<div>
+                     Cardinham Bodmin Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f4cb83df37b5086ad0bfd6e8acb0274c = L.circleMarker(
+                [50.5, -4.67],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_f4cb83df37b5086ad0bfd6e8acb0274c.bindTooltip(
+                `<div>
+                     Cardinham Bodmin Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7c7f710bcb1c64ad23e13babe245a6b = L.circleMarker(
+                [51.14, -0.23],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_d7c7f710bcb1c64ad23e13babe245a6b.bindTooltip(
+                `<div>
+                     Charlwood Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7d5babb5b08efad66281a0c9c6fe791 = L.circleMarker(
+                [51.14, -0.23],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_c7d5babb5b08efad66281a0c9c6fe791.bindTooltip(
+                `<div>
+                     Charlwood Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_501f4e710511119a6e3f9b4af0cc9caf = L.circleMarker(
+                [55.71, -2.38],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_501f4e710511119a6e3f9b4af0cc9caf.bindTooltip(
+                `<div>
+                     Charterhall Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d13312b15bb3bcb688b59474f88a519 = L.circleMarker(
+                [55.71, -2.38],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_3d13312b15bb3bcb688b59474f88a519.bindTooltip(
+                `<div>
+                     Charterhall Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_75bc36b1fb6225266501f7145f122ff0 = L.circleMarker(
+                [52.36, -1.33],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_75bc36b1fb6225266501f7145f122ff0.bindTooltip(
+                `<div>
+                     Church Lawford Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a24880e0d0575b5e510a020c3c61bee = L.circleMarker(
+                [52.36, -1.33],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_5a24880e0d0575b5e510a020c3c61bee.bindTooltip(
+                `<div>
+                     Church Lawford Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09c190e975619a9f806804241496b619 = L.circleMarker(
+                [52.48, -1.69],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_09c190e975619a9f806804241496b619.bindTooltip(
+                `<div>
+                     Coleshill Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7fb312154f3f7557e9e719cfe00c84c9 = L.circleMarker(
+                [52.48, -1.69],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_7fb312154f3f7557e9e719cfe00c84c9.bindTooltip(
+                `<div>
+                     Coleshill Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0d7cae50fd79da9f6cc9702fc0148bf1 = L.circleMarker(
+                [52.42, -1.54],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_0d7cae50fd79da9f6cc9702fc0148bf1.bindTooltip(
+                `<div>
+                     Coventry Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c1c56ecc80b6874b4d90b2585508455c = L.circleMarker(
+                [52.42, -1.54],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_c1c56ecc80b6874b4d90b2585508455c.bindTooltip(
+                `<div>
+                     Coventry Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8d8b0a45b7e588e63625383502958d3d = L.circleMarker(
+                [54.8, -4.01],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_8d8b0a45b7e588e63625383502958d3d.bindTooltip(
+                `<div>
+                     Dundrennan Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_24a7ef1c2238f3d6a5a7220f6f4cb293 = L.circleMarker(
+                [54.8, -4.01],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_24a7ef1c2238f3d6a5a7220f6f4cb293.bindTooltip(
+                `<div>
+                     Dundrennan Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_66f28d3962a3fb045a7db433afd3981a = L.circleMarker(
+                [56.45, -5.44],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_66f28d3962a3fb045a7db433afd3981a.bindTooltip(
+                `<div>
+                     Dunstaffnage Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_567d48f8156a6fb4303393ed73428268 = L.circleMarker(
+                [56.45, -5.44],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_567d48f8156a6fb4303393ed73428268.bindTooltip(
+                `<div>
+                     Dunstaffnage Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_31252c5c7abe4eb91b6e430fe413685f = L.circleMarker(
+                [54.77, -1.59],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_31252c5c7abe4eb91b6e430fe413685f.bindTooltip(
+                `<div>
+                     Durham Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_af6fb84f641740240640ceb16908ba55 = L.circleMarker(
+                [54.77, -1.59],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_af6fb84f641740240640ceb16908ba55.bindTooltip(
+                `<div>
+                     Durham Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_da7e209275fc96e7b8b6bca56c288373 = L.circleMarker(
+                [57.2, -2.21],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_da7e209275fc96e7b8b6bca56c288373.bindTooltip(
+                `<div>
+                     Dyce Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_133eb27db297492a2d4145658a48212b = L.circleMarker(
+                [57.2, -2.21],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_133eb27db297492a2d4145658a48212b.bindTooltip(
+                `<div>
+                     Dyce Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7312f0b782c4852e50166eef0aa2784e = L.circleMarker(
+                [51.29, 0.45],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_7312f0b782c4852e50166eef0aa2784e.bindTooltip(
+                `<div>
+                     East Malling Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_733e81e0f87f25fbe74a222e5151a952 = L.circleMarker(
+                [51.29, 0.45],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_733e81e0f87f25fbe74a222e5151a952.bindTooltip(
+                `<div>
+                     East Malling Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_661395bdf0da7ee09fc135106ca28a5d = L.circleMarker(
+                [55.93, -3.34],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_661395bdf0da7ee09fc135106ca28a5d.bindTooltip(
+                `<div>
+                     Edinburgh Gogarbank Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f059425e499dd73dad1d409fea87ab47 = L.circleMarker(
+                [55.93, -3.34],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_f059425e499dd73dad1d409fea87ab47.bindTooltip(
+                `<div>
+                     Edinburgh Gogarbank Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd4ee88252dcd95896824ed93b5d5009 = L.circleMarker(
+                [55.31, -3.21],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_bd4ee88252dcd95896824ed93b5d5009.bindTooltip(
+                `<div>
+                     Eskdalemuir Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4cf13f9377aac3fe47ec654d80e3fcde = L.circleMarker(
+                [55.31, -3.21],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_4cf13f9377aac3fe47ec654d80e3fcde.bindTooltip(
+                `<div>
+                     Eskdalemuir Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_11adeabb5cc070f5c6ab921b1a459ee1 = L.circleMarker(
+                [50.74, -3.41],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_11adeabb5cc070f5c6ab921b1a459ee1.bindTooltip(
+                `<div>
+                     Exeter Airport No 2 Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3fbe0f25ecec18a662bc04840ba967fa = L.circleMarker(
+                [50.74, -3.41],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_3fbe0f25ecec18a662bc04840ba967fa.bindTooltip(
+                `<div>
+                     Exeter Airport No 2 Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c7bc6b7661a1aed92f2ed2daa33e56f = L.circleMarker(
+                [55.91, -4.53],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_1c7bc6b7661a1aed92f2ed2daa33e56f.bindTooltip(
+                `<div>
+                     Glasgow, Bishopton Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ae13f1d6b5878c0e197267d1b8987c5 = L.circleMarker(
+                [55.91, -4.53],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_7ae13f1d6b5878c0e197267d1b8987c5.bindTooltip(
+                `<div>
+                     Glasgow, Bishopton Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76f73a6cd24400f273d19fb455655725 = L.circleMarker(
+                [53.18, -2.99],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_76f73a6cd24400f273d19fb455655725.bindTooltip(
+                `<div>
+                     Hawarden Airport Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b933ca6615874f0a6bc2c4bdb00744b = L.circleMarker(
+                [53.18, -2.99],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_0b933ca6615874f0a6bc2c4bdb00744b.bindTooltip(
+                `<div>
+                     Hawarden Airport Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3a20a72544c2a8cde8c1877a82ab1bdb = L.circleMarker(
+                [51.48, -0.45],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_3a20a72544c2a8cde8c1877a82ab1bdb.bindTooltip(
+                `<div>
+                     Heathrow Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0d18ddee71bd5267f51a9872f282f143 = L.circleMarker(
+                [51.48, -0.45],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_0d18ddee71bd5267f51a9872f282f143.bindTooltip(
+                `<div>
+                     Heathrow Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e760138810452d2c19aca2862f4ed5b8 = L.circleMarker(
+                [50.89, 0.32],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_e760138810452d2c19aca2862f4ed5b8.bindTooltip(
+                `<div>
+                     Herstmonceux, West End Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_119dce4b220deb9abbdbc510479a244d = L.circleMarker(
+                [50.89, 0.32],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_119dce4b220deb9abbdbc510479a244d.bindTooltip(
+                `<div>
+                     Herstmonceux, West End Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ee37b500a93df8502827fb0842ac0376 = L.circleMarker(
+                [52.87, 0.14],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_ee37b500a93df8502827fb0842ac0376.bindTooltip(
+                `<div>
+                     Holbeach No 2 Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_03235404b3ba8021dbda21de93de8993 = L.circleMarker(
+                [52.87, 0.14],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_03235404b3ba8021dbda21de93de8993.bindTooltip(
+                `<div>
+                     Holbeach No 2 Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c555f9b2eef94ef75d61450fd4c0199 = L.circleMarker(
+                [50.78, -1.84],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_1c555f9b2eef94ef75d61450fd4c0199.bindTooltip(
+                `<div>
+                     Hurn Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7dea7fd771b6360903ec5fa6b431d9d1 = L.circleMarker(
+                [50.78, -1.84],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_7dea7fd771b6360903ec5fa6b431d9d1.bindTooltip(
+                `<div>
+                     Hurn Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_707b0770d5ccb101d307a5543ef70e5f = L.circleMarker(
+                [56.85, -2.27],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_707b0770d5ccb101d307a5543ef70e5f.bindTooltip(
+                `<div>
+                     Inverbervie No2 Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d310e84116c39249a1a62e5428be00bd = L.circleMarker(
+                [56.85, -2.27],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_d310e84116c39249a1a62e5428be00bd.bindTooltip(
+                `<div>
+                     Inverbervie No2 Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c4088d6752e593800f0917aa831b50fe = L.circleMarker(
+                [49.21, -2.19],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_c4088d6752e593800f0917aa831b50fe.bindTooltip(
+                `<div>
+                     Jersey Airport Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_96c9d03db28747ad5408d505cc2c3d8d = L.circleMarker(
+                [49.21, -2.19],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_96c9d03db28747ad5408d505cc2c3d8d.bindTooltip(
+                `<div>
+                     Jersey Airport Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c760d01ed6e634235d8b16835f570e0 = L.circleMarker(
+                [54.3, -6.11],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_2c760d01ed6e634235d8b16835f570e0.bindTooltip(
+                `<div>
+                     Katesbridge Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d3f48e601f57cdd6907c8b00088fd1e4 = L.circleMarker(
+                [51.3, -0.09],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_d3f48e601f57cdd6907c8b00088fd1e4.bindTooltip(
+                `<div>
+                     Kenley Airfield Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_551848590fe03123b166fb45397d851d = L.circleMarker(
+                [51.3, -0.09],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_551848590fe03123b166fb45397d851d.bindTooltip(
+                `<div>
+                     Kenley Airfield Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c849329fff6019d38299427f956893a = L.circleMarker(
+                [51.48, -0.29],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_9c849329fff6019d38299427f956893a.bindTooltip(
+                `<div>
+                     Kew Gardens Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9953f94cea9d142324cc0f6dc2652e0d = L.circleMarker(
+                [51.48, -0.29],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_9953f94cea9d142324cc0f6dc2652e0d.bindTooltip(
+                `<div>
+                     Kew Gardens Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0eebaefba4e3da2037a0ae524a22a54e = L.circleMarker(
+                [58.23, -3.92],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_0eebaefba4e3da2037a0ae524a22a54e.bindTooltip(
+                `<div>
+                     Kinbrace, Hatchery Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d50ce6bb689af1277c240a9d61251072 = L.circleMarker(
+                [58.23, -3.92],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_d50ce6bb689af1277c240a9d61251072.bindTooltip(
+                `<div>
+                     Kinbrace, Hatchery Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b407e0d066682abcbafb993e22395b57 = L.circleMarker(
+                [57.61, -5.31],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_b407e0d066682abcbafb993e22395b57.bindTooltip(
+                `<div>
+                     Kinlochewe Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ff167ddca706101d40a1acbce960b2a4 = L.circleMarker(
+                [57.61, -5.31],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_ff167ddca706101d40a1acbce960b2a4.bindTooltip(
+                `<div>
+                     Kinlochewe Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_79d00da16e0f29d347ddcfcf2e5d68b0 = L.circleMarker(
+                [57.65, -3.56],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_79d00da16e0f29d347ddcfcf2e5d68b0.bindTooltip(
+                `<div>
+                     Kinloss Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0695041abeeb920a71e74fe60b592fa6 = L.circleMarker(
+                [57.65, -3.56],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_0695041abeeb920a71e74fe60b592fa6.bindTooltip(
+                `<div>
+                     Kinloss Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c8475c61376597ec13c6687dbb7d16fd = L.circleMarker(
+                [58.95, -2.9],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_c8475c61376597ec13c6687dbb7d16fd.bindTooltip(
+                `<div>
+                     Kirkwall Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_85e1f50ce0992613e0210bed0794efff = L.circleMarker(
+                [58.95, -2.9],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_85e1f50ce0992613e0210bed0794efff.bindTooltip(
+                `<div>
+                     Kirkwall Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_65c7816e22931bf9c2240c406bb55ad6 = L.circleMarker(
+                [52.76, -3.47],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_65c7816e22931bf9c2240c406bb55ad6.bindTooltip(
+                `<div>
+                     Lake Vyrnwy No 2 Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_45340a1904c9506cccddb6af076b8d44 = L.circleMarker(
+                [52.76, -3.47],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_45340a1904c9506cccddb6af076b8d44.bindTooltip(
+                `<div>
+                     Lake Vyrnwy No 2 Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f27268c5ce056a109f8e375f5ce4c574 = L.circleMarker(
+                [53.87, -0.44],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_f27268c5ce056a109f8e375f5ce4c574.bindTooltip(
+                `<div>
+                     Leconfield Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_906b3c7ac90b6407e964a1fd289eabe6 = L.circleMarker(
+                [53.87, -0.44],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_906b3c7ac90b6407e964a1fd289eabe6.bindTooltip(
+                `<div>
+                     Leconfield Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd3760c90cddc89ce7665e2b6f547c35 = L.circleMarker(
+                [54.3, -1.53],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_dd3760c90cddc89ce7665e2b6f547c35.bindTooltip(
+                `<div>
+                     Leeming Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c03c0a2dff2ddac1460b6c06d8e09d8 = L.circleMarker(
+                [54.3, -1.53],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_3c03c0a2dff2ddac1460b6c06d8e09d8.bindTooltip(
+                `<div>
+                     Leeming Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_417483149b9534fb6e1608127c846988 = L.circleMarker(
+                [60.14, -1.18],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_417483149b9534fb6e1608127c846988.bindTooltip(
+                `<div>
+                     Lerwick Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2054755102c73dce0ca2fc92ed40650 = L.circleMarker(
+                [60.14, -1.18],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_c2054755102c73dce0ca2fc92ed40650.bindTooltip(
+                `<div>
+                     Lerwick Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ac3da4f5251cba09fb1a607e29bc189 = L.circleMarker(
+                [56.38, -2.86],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_7ac3da4f5251cba09fb1a607e29bc189.bindTooltip(
+                `<div>
+                     Leuchars Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc19fdace46ff65a1efc453d71a15723 = L.circleMarker(
+                [56.38, -2.86],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_dc19fdace46ff65a1efc453d71a15723.bindTooltip(
+                `<div>
+                     Leuchars Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b309b4b12d9fdb759ff832027ef5a00 = L.circleMarker(
+                [51.09, -3.61],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_0b309b4b12d9fdb759ff832027ef5a00.bindTooltip(
+                `<div>
+                     Liscombe Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9436f8b277e5cd96f2702e93faa73f6 = L.circleMarker(
+                [51.09, -3.61],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_d9436f8b277e5cd96f2702e93faa73f6.bindTooltip(
+                `<div>
+                     Liscombe Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb4a128c957cb74e63a23e87f692e67b = L.circleMarker(
+                [51.86, -1.69],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_fb4a128c957cb74e63a23e87f692e67b.bindTooltip(
+                `<div>
+                     Little Rissington Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_74a2ccaa9ec47c3c3d4c674a27b98c49 = L.circleMarker(
+                [51.86, -1.69],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_74a2ccaa9ec47c3c3d4c674a27b98c49.bindTooltip(
+                `<div>
+                     Little Rissington Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b30041136ff36737ca8126509d987708 = L.circleMarker(
+                [57.72, -4.9],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_b30041136ff36737ca8126509d987708.bindTooltip(
+                `<div>
+                     Loch Glascarnoch Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2a658c2bcc5a98b5592f5bdd71e23b4 = L.circleMarker(
+                [57.72, -4.9],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_d2a658c2bcc5a98b5592f5bdd71e23b4.bindTooltip(
+                `<div>
+                     Loch Glascarnoch Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78973662dd11a61c7d197d03d4627eb4 = L.circleMarker(
+                [51.5, -1.99],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_78973662dd11a61c7d197d03d4627eb4.bindTooltip(
+                `<div>
+                     Lyneham Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5f21d742731ad0d9dad1c09260464301 = L.circleMarker(
+                [51.5, -1.99],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_5f21d742731ad0d9dad1c09260464301.bindTooltip(
+                `<div>
+                     Lyneham Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_940c70b536f0ffa599111001dd6514fb = L.circleMarker(
+                [55.16, -6.95],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_940c70b536f0ffa599111001dd6514fb.bindTooltip(
+                `<div>
+                     Magilligan No 2 Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0adbdfda960f71a159ce81c96277e138 = L.circleMarker(
+                [55.16, -6.95],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_0adbdfda960f71a159ce81c96277e138.bindTooltip(
+                `<div>
+                     Magilligan No 2 Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bda73a5d17b2a52a416613c28ebc9450 = L.circleMarker(
+                [51.35, 1.34],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_bda73a5d17b2a52a416613c28ebc9450.bindTooltip(
+                `<div>
+                     Manston Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b6d51e36ae58d85b057c1a0298bce146 = L.circleMarker(
+                [51.35, 1.34],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_b6d51e36ae58d85b057c1a0298bce146.bindTooltip(
+                `<div>
+                     Manston Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_96949734b91b0a8ac085bf9ac7c30a63 = L.circleMarker(
+                [52.4, -0.24],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_96949734b91b0a8ac085bf9ac7c30a63.bindTooltip(
+                `<div>
+                     Monks Wood Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23211d0bdbf60ef51358f3e0b6430593 = L.circleMarker(
+                [52.4, -0.24],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_23211d0bdbf60ef51358f3e0b6430593.bindTooltip(
+                `<div>
+                     Monks Wood Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd40542ebec79e623e404f90eb20bba6 = L.circleMarker(
+                [54.08, -2.86],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_fd40542ebec79e623e404f90eb20bba6.bindTooltip(
+                `<div>
+                     Morecambe No 2 Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_084c82659481a73340eda2ac5305848d = L.circleMarker(
+                [55.21, -1.69],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_084c82659481a73340eda2ac5305848d.bindTooltip(
+                `<div>
+                     Morpeth Cockle Park Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef321933f7c6bf6f953f24f601be2d00 = L.circleMarker(
+                [50.77, -3.9],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_ef321933f7c6bf6f953f24f601be2d00.bindTooltip(
+                `<div>
+                     North Wyke Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60970f4f12eec27f7956036a3eb40dc3 = L.circleMarker(
+                [50.77, -3.9],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_60970f4f12eec27f7956036a3eb40dc3.bindTooltip(
+                `<div>
+                     North Wyke Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a3a1c0cc458e3eb76aeb2bab07bb8b06 = L.circleMarker(
+                [53.01, -1.25],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_a3a1c0cc458e3eb76aeb2bab07bb8b06.bindTooltip(
+                `<div>
+                     Nottingham, Watnall Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_67b5a3f6aa20b0010c401eca875340a0 = L.circleMarker(
+                [53.01, -1.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_67b5a3f6aa20b0010c401eca875340a0.bindTooltip(
+                `<div>
+                     Nottingham, Watnall Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c66d6d0ebc68eb594ad79f15c4d1e08 = L.circleMarker(
+                [51.24, -0.94],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_5c66d6d0ebc68eb594ad79f15c4d1e08.bindTooltip(
+                `<div>
+                     Odiham Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_acf86edcdf9f6224e57f2dd77a7ff7f4 = L.circleMarker(
+                [51.24, -0.94],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_acf86edcdf9f6224e57f2dd77a7ff7f4.bindTooltip(
+                `<div>
+                     Odiham Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_26baf6b73e094e4ca3e0900cd97f0335 = L.circleMarker(
+                [55.52, -4.58],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_26baf6b73e094e4ca3e0900cd97f0335.bindTooltip(
+                `<div>
+                     Prestwick Gannet Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a3daa58d35396b42076e6f8f4ff88e27 = L.circleMarker(
+                [55.52, -4.58],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_a3daa58d35396b42076e6f8f4ff88e27.bindTooltip(
+                `<div>
+                     Prestwick Gannet Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78d8ba1d722e336014c11534a002ce6e = L.circleMarker(
+                [51.44, -0.94],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_78d8ba1d722e336014c11534a002ce6e.bindTooltip(
+                `<div>
+                     Reading University Whiteknights Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c0e3a02785720368d05e0f3a2d7a99a5 = L.circleMarker(
+                [54.09, -4.63],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_c0e3a02785720368d05e0f3a2d7a99a5.bindTooltip(
+                `<div>
+                     Ronaldsway Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f37e46fd2f54952c191e9effbc80bfba = L.circleMarker(
+                [54.09, -4.63],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_f37e46fd2f54952c191e9effbc80bfba.bindTooltip(
+                `<div>
+                     Ronaldsway Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73f04363dd059f6d2f6b172c8d2348d5 = L.circleMarker(
+                [51.91, -2.59],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_73f04363dd059f6d2f6b172c8d2348d5.bindTooltip(
+                `<div>
+                     Ross on Wye Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_29126e558e8025c657d289365ab73f50 = L.circleMarker(
+                [51.91, -2.59],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_29126e558e8025c657d289365ab73f50.bindTooltip(
+                `<div>
+                     Ross on Wye Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e881fb9e7c2226a0ba7e7460fe0f485 = L.circleMarker(
+                [53.36, -2.38],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_3e881fb9e7c2226a0ba7e7460fe0f485.bindTooltip(
+                `<div>
+                     Rostherne No 2 Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f414246a908f6e5c2a4ad3caa6b7169f = L.circleMarker(
+                [53.36, -2.38],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_f414246a908f6e5c2a4ad3caa6b7169f.bindTooltip(
+                `<div>
+                     Rostherne No 2 Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a1964c29c10872e5350f5dda29869ca0 = L.circleMarker(
+                [51.81, -0.36],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_a1964c29c10872e5350f5dda29869ca0.bindTooltip(
+                `<div>
+                     Rothamsted Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_490f1311fb9e2032eb06b35d283951a4 = L.circleMarker(
+                [51.81, -0.36],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_490f1311fb9e2032eb06b35d283951a4.bindTooltip(
+                `<div>
+                     Rothamsted Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0cc8784348be6e2a06b34ab492283292 = L.circleMarker(
+                [54.5, -2.68],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_0cc8784348be6e2a06b34ab492283292.bindTooltip(
+                `<div>
+                     Shap Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c14a089e85fa9b644eef79fff8e85e5 = L.circleMarker(
+                [54.5, -2.68],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_8c14a089e85fa9b644eef79fff8e85e5.bindTooltip(
+                `<div>
+                     Shap Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b53a22355338524f54c3427cd00e52c = L.circleMarker(
+                [52.79, -2.66],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_3b53a22355338524f54c3427cd00e52c.bindTooltip(
+                `<div>
+                     Shawbury Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8daa49be89dec4c31e5e4e958b2a6f73 = L.circleMarker(
+                [52.79, -2.66],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_8daa49be89dec4c31e5e4e958b2a6f73.bindTooltip(
+                `<div>
+                     Shawbury Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68b3c2f4f9fbbdd101b2cdbf5f4a4393 = L.circleMarker(
+                [53.38, -1.49],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_68b3c2f4f9fbbdd101b2cdbf5f4a4393.bindTooltip(
+                `<div>
+                     Sheffield Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e5ca6ee7a50ce6855ff930b345c4ca4 = L.circleMarker(
+                [52.24, -2.89],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_8e5ca6ee7a50ce6855ff930b345c4ca4.bindTooltip(
+                `<div>
+                     Shobdon Airfield Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4621cae6c1f8eae12ed6db7899553a14 = L.circleMarker(
+                [52.24, -2.89],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_4621cae6c1f8eae12ed6db7899553a14.bindTooltip(
+                `<div>
+                     Shobdon Airfield Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f0bb4e90fd0795344c67ae50a27dd89c = L.circleMarker(
+                [51.55, 0.83],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_f0bb4e90fd0795344c67ae50a27dd89c.bindTooltip(
+                `<div>
+                     Shoeburyness Landwick Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_65709e8a4c75c55745536bcc1cf6bb44 = L.circleMarker(
+                [51.41, -3.44],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_65709e8a4c75c55745536bcc1cf6bb44.bindTooltip(
+                `<div>
+                     St Athan Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e3f28e0cb5beccdf154240c3a31a5adf = L.circleMarker(
+                [51.41, -3.44],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_e3f28e0cb5beccdf154240c3a31a5adf.bindTooltip(
+                `<div>
+                     St Athan Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b522827d72ffd37adb2680f555803e0f = L.circleMarker(
+                [58.21, -6.32],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_b522827d72ffd37adb2680f555803e0f.bindTooltip(
+                `<div>
+                     Stornoway Airport Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_27b3e7787afaf56be65a06adace1bcf5 = L.circleMarker(
+                [58.21, -6.32],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_27b3e7787afaf56be65a06adace1bcf5.bindTooltip(
+                `<div>
+                     Stornoway Airport Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc454204417597d2a45812eee070a06c = L.circleMarker(
+                [56.33, -3.73],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_fc454204417597d2a45812eee070a06c.bindTooltip(
+                `<div>
+                     Strathallan Airfield Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d3ad04955c23d09611a77d28735a46e2 = L.circleMarker(
+                [56.33, -3.73],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_d3ad04955c23d09611a77d28735a46e2.bindTooltip(
+                `<div>
+                     Strathallan Airfield Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a72e696978de4803bedb0df51ee93ee = L.circleMarker(
+                [52.84, -1.25],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_7a72e696978de4803bedb0df51ee93ee.bindTooltip(
+                `<div>
+                     Sutton Bonington Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3081bdfcfe8b2e1ed01721c036facec = L.circleMarker(
+                [52.84, -1.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_f3081bdfcfe8b2e1ed01721c036facec.bindTooltip(
+                `<div>
+                     Sutton Bonington Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f25c98ba1fe47114b27122413c54fc1 = L.circleMarker(
+                [57.82, -3.97],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_8f25c98ba1fe47114b27122413c54fc1.bindTooltip(
+                `<div>
+                     Tain Range Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a6ffe79b3e507735bb823ee16387721a = L.circleMarker(
+                [57.82, -3.97],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_a6ffe79b3e507735bb823ee16387721a.bindTooltip(
+                `<div>
+                     Tain Range Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad857ee437dc6cd10b717447b24846f9 = L.circleMarker(
+                [54.33, -7.59],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_ad857ee437dc6cd10b717447b24846f9.bindTooltip(
+                `<div>
+                     Thomastown Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_898645e6b80a3b10af2feca1f2076b23 = L.circleMarker(
+                [54.33, -7.59],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_898645e6b80a3b10af2feca1f2076b23.bindTooltip(
+                `<div>
+                     Thomastown Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_214d4e1cb5af558d5258e64d2cab7bc4 = L.circleMarker(
+                [50.81, -0.92],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_214d4e1cb5af558d5258e64d2cab7bc4.bindTooltip(
+                `<div>
+                     Thorney Island Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e01a74f5211aceef0ec1ea093abe28df = L.circleMarker(
+                [50.81, -0.92],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_e01a74f5211aceef0ec1ea093abe28df.bindTooltip(
+                `<div>
+                     Thorney Island Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_201744f3418df63e70036f23cd49ce01 = L.circleMarker(
+                [54.93, -3.95],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_201744f3418df63e70036f23cd49ce01.bindTooltip(
+                `<div>
+                     Threave Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_16227dcde770e07cd92fbf9f47bfe9c8 = L.circleMarker(
+                [54.93, -3.95],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_16227dcde770e07cd92fbf9f47bfe9c8.bindTooltip(
+                `<div>
+                     Threave Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7c939df0182d6dabf874e3cf73a2529 = L.circleMarker(
+                [52.46, 1.16],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_c7c939df0182d6dabf874e3cf73a2529.bindTooltip(
+                `<div>
+                     Tibenham Airfield Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c2d1a87c2342da2e2ef60c4da523009 = L.circleMarker(
+                [52.46, 1.16],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_2c2d1a87c2342da2e2ef60c4da523009.bindTooltip(
+                `<div>
+                     Tibenham Airfield Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_24f79067c70ec8b465d79514d63a7658 = L.circleMarker(
+                [56.5, -6.88],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_24f79067c70ec8b465d79514d63a7658.bindTooltip(
+                `<div>
+                     Tiree Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_938860fb27d53cc1810b9ff0ac437689 = L.circleMarker(
+                [56.5, -6.88],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_938860fb27d53cc1810b9ff0ac437689.bindTooltip(
+                `<div>
+                     Tiree Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aaf1f17eb325fac9fc0b343dd09a4bfb = L.circleMarker(
+                [56.87, -4.71],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_aaf1f17eb325fac9fc0b343dd09a4bfb.bindTooltip(
+                `<div>
+                     Tulloch Bridge Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9dfbbf0a3fb58e17745c1bcf26b007ee = L.circleMarker(
+                [56.87, -4.71],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_9dfbbf0a3fb58e17745c1bcf26b007ee.bindTooltip(
+                `<div>
+                     Tulloch Bridge Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b36f7cb18d38a223729382fdb552db29 = L.circleMarker(
+                [53.25, -4.54],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_b36f7cb18d38a223729382fdb552db29.bindTooltip(
+                `<div>
+                     Valley Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_89aad261afd6ecbf4af714a3e98a6656 = L.circleMarker(
+                [53.25, -4.54],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_89aad261afd6ecbf4af714a3e98a6656.bindTooltip(
+                `<div>
+                     Valley Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_de3ba12d3a2346ded2cd0cc66a1ad266 = L.circleMarker(
+                [53.18, -0.52],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_de3ba12d3a2346ded2cd0cc66a1ad266.bindTooltip(
+                `<div>
+                     Waddington Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1b6f1ba46399cddacb07ae46526f63b = L.circleMarker(
+                [53.18, -0.52],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_f1b6f1ba46399cddacb07ae46526f63b.bindTooltip(
+                `<div>
+                     Waddington Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_211b21965799d15b1f59bf7657b800d9 = L.circleMarker(
+                [52.12, 0.96],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_211b21965799d15b1f59bf7657b800d9.bindTooltip(
+                `<div>
+                     Wattisham Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d3ae154a7ae555032d2b87690354844b = L.circleMarker(
+                [52.12, 0.96],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_d3ae154a7ae555032d2b87690354844b.bindTooltip(
+                `<div>
+                     Wattisham Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3803579d883a4cb6f153a5e8a170861c = L.circleMarker(
+                [52.21, -1.6],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_3803579d883a4cb6f153a5e8a170861c.bindTooltip(
+                `<div>
+                     Wellesbourne Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_32935683b6a090144ac64b52af4f250b = L.circleMarker(
+                [52.95, 1.12],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_32935683b6a090144ac64b52af4f250b.bindTooltip(
+                `<div>
+                     Weybourne Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e9307897b6a1adcabe152adda963f4bc = L.circleMarker(
+                [52.46, -1.93],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_e9307897b6a1adcabe152adda963f4bc.bindTooltip(
+                `<div>
+                     Winterbourne No 2 Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6cc54bddf0a71a2a809173d7cff3392e = L.circleMarker(
+                [52.46, -1.93],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_6cc54bddf0a71a2a809173d7cff3392e.bindTooltip(
+                `<div>
+                     Winterbourne No 2 Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23513c4ef465f8d3a301bb750e938f2f = L.circleMarker(
+                [51.31, -0.48],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_23513c4ef465f8d3a301bb750e938f2f.bindTooltip(
+                `<div>
+                     Wisley Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c3aed174fcb3c1c6f56bfe1d5eeefb09 = L.circleMarker(
+                [51.31, -0.48],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_c3aed174fcb3c1c6f56bfe1d5eeefb09.bindTooltip(
+                `<div>
+                     Wisley Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be972b1b97aa15eeb438c10dc3cfafdf = L.circleMarker(
+                [52.61, -0.47],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_be972b1b97aa15eeb438c10dc3cfafdf.bindTooltip(
+                `<div>
+                     Wittering Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44e8aacca354bb447c579242bab3472f = L.circleMarker(
+                [52.61, -0.47],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_44e8aacca354bb447c579242bab3472f.bindTooltip(
+                `<div>
+                     Wittering Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69874a4cc7464acff184c0a6854b828e = L.circleMarker(
+                [52.01, -0.6],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_69874a4cc7464acff184c0a6854b828e.bindTooltip(
+                `<div>
+                     Woburn Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ba275b4f0f2db4ea3f5f1a824475fd9 = L.circleMarker(
+                [52.01, -0.6],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_6ba275b4f0f2db4ea3f5f1a824475fd9.bindTooltip(
+                `<div>
+                     Woburn Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c38163d6f960b921ffcb3a8a6fce5c8 = L.circleMarker(
+                [51.01, -2.64],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_8c38163d6f960b921ffcb3a8a6fce5c8.bindTooltip(
+                `<div>
+                     Yeovilton Automatic Weather Station — GHI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e9eae82f1d1b15506e14cde5aa00705 = L.circleMarker(
+                [51.01, -2.64],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1201ccb803f0a964a9ae7df91c8f722c);
+        
+    
+            circle_marker_3e9eae82f1d1b15506e14cde5aa00705.bindTooltip(
+                `<div>
+                     Yeovilton Automatic Weather Station — Direct
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
