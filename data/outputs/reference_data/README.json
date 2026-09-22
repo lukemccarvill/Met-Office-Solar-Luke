@@ -1,0 +1,16 @@
+{
+  "description": "Reusable GSP, GHI instrument, and reference boundary data exported from 02_GSP_regions.ipynb.",
+  "crs": "EPSG:4326",
+  "gsp_region_count": 362,
+  "gsp_regions_with_ghi_count": 67,
+  "ghi_instrument_count": 86,
+  "observation_batch": "2026092206",
+  "ghi_source": "Public Met Office land observations AWS bucket: met-office-land-observations-data",
+  "boundary_source": "GADM 4.1: https://gadm.org/data.html",
+  "files": [
+    "gsp_regions_with_colour_and_ghi_coverage.geojson",
+    "ghi_instrument_locations.geojson",
+    "ghi_instrument_locations.csv",
+    "reference_boundaries.geojson"
+  ]
+}
