@@ -1,4 +1,4 @@
-station_id,midas_name,midas_latitude,midas_longitude,reference_name,reference_latitude,reference_longitude,latitude_difference_deg,longitude_difference_deg,distance_km,large_discrepancy
-00811,herstmonceux-west-end,50.891,0.317,East Malling Automatic Weather Station,51.29,0.45,-0.3990000000000009,-0.133,45.38793048139394,True
-00671,ross-on-wye,51.911,-2.586,Almondsbury Automatic Weather Station,51.55,-2.56,0.3610000000000042,-0.0259999999999998,40.22616392524049,True
-62208,exeter-surfacenet-enclosure-aws,50.729,-3.475,Exeter Airport No 2 Automatic Weather Station,50.74,-3.41,-0.011000000000002785,-0.06499999999999995,4.74104653878092,True
+station_id,midas_name,midas_latitude,midas_longitude,reference_name,reference_latitude,reference_longitude,distance_km
+00811,herstmonceux-west-end,50.891,0.317,East Malling Automatic Weather Station,51.29,0.45,45.37148997365053
+00671,ross-on-wye,51.911,-2.586,Almondsbury Automatic Weather Station,51.55,-2.56,40.22680194643919
+62208,exeter-surfacenet-enclosure-aws,50.729,-3.475,Exeter Airport No 2 Automatic Weather Station,50.74,-3.41,4.740007511422228
