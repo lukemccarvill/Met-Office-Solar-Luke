@@ -1,1 +1,4 @@
 data/inputs/MIDAS202607/
+data/outputs/MIDAS202607/midas_2024_all_rows_radiation.csv
+data/outputs/MIDAS202607/midas_2024_hourly_radiation.csv
+data/outputs/reference_data/pvlive_2024_gsp_hourly.csv
